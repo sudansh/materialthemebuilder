@@ -1,0 +1,55 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="AbstractClassNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AnnotationNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AssertsWithoutMessagesTestNG" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AssignmentToCollectionFieldFromParameter" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AssignmentToDateFieldFromParameter" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ClassNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ConstantNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ConstantTestNGAssertArgument" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ConvertAnnotations" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ConvertJavadoc" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ConvertOldAnnotations" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="DeserializableClassInSecureContext" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ElementOnlyUsedFromTestCode" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="EnumeratedClassNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="EnumeratedConstantNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="EscapedMetaCharacter" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ExpectedExceptionNeverThrownTestNG" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="GrFieldAlreadyDefined" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="GroovyAnnotationNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="GroovyClassNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="GroovyEnumerationNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="GroovyInterfaceNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="InstanceMethodNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="InstanceVariableNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="InterfaceNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="JUnit3MethodNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="JUnit4MethodNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="JUnitAbstractTestClassNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="JUnitTestClassNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="JUnitTestNG" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="MisorderedAssertEqualsArgumentsTestNG" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="NativeMethodNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="OctalEscape" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="RedundantThrowsDeclaration" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ReturnOfCollectionField" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ReturnOfDateField" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="SerializableClassInSecureContext" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="SimplifiedTestNGAssertion" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+    <inspection_tool class="StaticMethodNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="StaticVariableNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="SuperClassHasFrequentlyUsedInheritors" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="TestNGMethodNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="TypeParameterNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="UndeclaredTests" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="UnusedImport" enabled="true" level="WARNING" enabled_by_default="true" />
+  </profile>
+</component>
