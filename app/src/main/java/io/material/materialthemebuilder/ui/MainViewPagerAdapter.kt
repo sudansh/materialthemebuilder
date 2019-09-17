@@ -22,38 +22,35 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import io.material.materialthemebuilder.R
 import io.material.materialthemebuilder.ui.component.ComponentFragment
-import io.material.materialthemebuilder.ui.instruction.InstructionsFragment
 import io.material.materialthemebuilder.ui.themesummary.ThemeSummaryFragment
 
 /**
  * View pager to show all tabbed destinations - Instructions, Theme Summary and Components.
  */
 class MainViewPagerAdapter(
-  private val context: Context,
-  fragmentManager: FragmentManager
+	private val context: Context,
+	fragmentManager: FragmentManager
 ) : FragmentStatePagerAdapter(fragmentManager) {
 
-  enum class MainFragments(val titleRes: Int) {
-    INSTRUCTIONS(R.string.tab_title_instructions),
-    THEME_SUMMARY(R.string.tab_title_theme_summary),
-    COMPONENTS(R.string.tab_title_components)
-  }
+	enum class MainFragments(val titleRes: Int) {
+		COMPONENTS(R.string.tab_title_components),
+		THEME_SUMMARY(R.string.tab_title_theme_summary)
+	}
 
-  override fun getCount(): Int = MainFragments.values().size
+	override fun getCount(): Int = MainFragments.values().size
 
-  private fun getItemType(position: Int): MainFragments {
-    return MainFragments.values()[position]
-  }
+	private fun getItemType(position: Int): MainFragments {
+		return MainFragments.values()[position]
+	}
 
-  override fun getPageTitle(position: Int): CharSequence? {
-    return context.getString(getItemType(position).titleRes)
-  }
+	override fun getPageTitle(position: Int): CharSequence? {
+		return context.getString(getItemType(position).titleRes)
+	}
 
-  override fun getItem(position: Int): Fragment {
-    return when (getItemType(position)) {
-      MainFragments.INSTRUCTIONS -> InstructionsFragment()
-      MainFragments.THEME_SUMMARY -> ThemeSummaryFragment()
-      MainFragments.COMPONENTS -> ComponentFragment()
-    }
-  }
+	override fun getItem(position: Int): Fragment {
+		return when (getItemType(position)) {
+			MainFragments.THEME_SUMMARY -> ThemeSummaryFragment()
+			MainFragments.COMPONENTS -> ComponentFragment()
+		}
+	}
 }

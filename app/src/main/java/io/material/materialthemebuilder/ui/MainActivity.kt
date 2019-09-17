@@ -16,16 +16,17 @@
 
 package io.material.materialthemebuilder.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
-import com.google.android.material.tabs.TabLayout
 import androidx.viewpager.widget.ViewPager
-import io.material.materialthemebuilder.R
+import com.google.android.material.switchmaterial.SwitchMaterial
+import com.google.android.material.tabs.TabLayout
 import io.material.materialthemebuilder.App
+import io.material.materialthemebuilder.R
+import io.material.materialthemebuilder.ui.component.ComponentFragment
 import io.material.materialthemebuilder.ui.instruction.InstructionsFragment
 import io.material.materialthemebuilder.ui.themesummary.ThemeSummaryFragment
-import io.material.materialthemebuilder.ui.component.ComponentFragment
 
 /**
  * Single activity which contains the [MainViewPagerAdapter] that shows the [InstructionsFragment],
@@ -33,23 +34,33 @@ import io.material.materialthemebuilder.ui.component.ComponentFragment
  */
 class MainActivity : AppCompatActivity() {
 
-  private lateinit var viewPager: ViewPager
-  private lateinit var tabLayout: TabLayout
+	private lateinit var viewPager: ViewPager
+	private lateinit var tabLayout: TabLayout
 
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_main)
-    viewPager = findViewById(R.id.view_pager)
-    tabLayout = findViewById(R.id.tab_layout)
+	override fun onCreate(savedInstanceState: Bundle?) {
+		super.onCreate(savedInstanceState)
+		setContentView(R.layout.activity_main)
+		viewPager = findViewById(R.id.view_pager)
+		tabLayout = findViewById(R.id.tab_layout)
 
-    tabLayout.setupWithViewPager(viewPager)
-    val adapter = MainViewPagerAdapter(this, supportFragmentManager)
-    viewPager.adapter = adapter
+		tabLayout.setupWithViewPager(viewPager)
+		val adapter = MainViewPagerAdapter(this, supportFragmentManager)
+		viewPager.adapter = adapter
 
-    (application as App).preferenceRepository
-      .nightModeLive.observe(this, Observer { nightMode ->
-        nightMode?.let { delegate.localNightMode = it }
-      }
-    )
-  }
+		(application as App).preferenceRepository
+			.nightModeLive.observe(this, Observer { nightMode ->
+			nightMode?.let { delegate.localNightMode = it }
+		}
+		)
+		val darkThemeSwitch: SwitchMaterial = findViewById(R.id.dark_theme_switch)
+		val preferenceRepository = (application as App).preferenceRepository
+
+		preferenceRepository.isDarkThemeLive.observe(this, Observer { isDarkTheme ->
+			isDarkTheme?.let { darkThemeSwitch.isChecked = it }
+		})
+
+		darkThemeSwitch.setOnCheckedChangeListener { _, checked ->
+			preferenceRepository.isDarkTheme = checked
+		}
+	}
 }
