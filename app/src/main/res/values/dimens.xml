@@ -36,4 +36,33 @@
     <dimen name="alpha_emphasis_medium">@dimen/mtrl_emphasis_medium</dimen>
     <dimen name="alpha_emphasis_disabled">@dimen/mtrl_emphasis_disabled</dimen>
 
+    <dimen name="d32">32dp</dimen>
+    <dimen name="d80">80dp</dimen>
+    <dimen name="d72">72dp</dimen>
+    <dimen name="d50">50dp</dimen>
+    <dimen name="d40">40dp</dimen>
+    <dimen name="d36">36dp</dimen>
+    <dimen name="d24">24dp</dimen>
+    <dimen name="d4">4dp</dimen>
+    <dimen name="d2">2dp</dimen>
+
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_margin_half">8dp</dimen>
+
+    <!-- OnBoard. -->
+    <dimen name="pager_dot_size">8dp</dimen>
+
+    <dimen name="row_height">32dp</dimen>
+    <dimen name="divider">1dp</dimen>
+
+    <!--text size-->
+    <dimen name="f36">36sp</dimen>
+    <dimen name="f24">24sp</dimen>
+    <dimen name="f16">16sp</dimen>
+    <dimen name="f14">14sp</dimen>
+    <dimen name="f12">12sp</dimen>
+    <dimen name="textsizePrimary">@dimen/f14</dimen>
+    <dimen name="card_elevation">0dp</dimen>
+    <dimen name="logo_margin_top">180dp</dimen>
+    <dimen name="collapsingToolbarHeight">108dp</dimen>
 </resources>

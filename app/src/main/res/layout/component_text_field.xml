@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 ~ Copyright (C) 2019 The Android Open Source Project
 ~
 ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,59 +14,73 @@
 ~ limitations under the License.
 -->
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  android:layout_width="match_parent"
-  android:layout_height="wrap_content"
-  android:clipToPadding="false"
-  android:paddingTop="@dimen/keyline_5"
-  android:paddingBottom="@dimen/keyline_5"
-  android:paddingStart="@dimen/keyline_4"
-  android:paddingEnd="@dimen/keyline_4">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:clipToPadding="false"
+	android:orientation="vertical"
+	android:paddingStart="@dimen/keyline_4"
+	android:paddingTop="@dimen/keyline_5"
+	android:paddingEnd="@dimen/keyline_4"
+	android:paddingBottom="@dimen/keyline_5">
 
-    <io.material.materialthemebuilder.widget.LabelLinkView
-      android:id="@+id/label"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/text_field_label_title"
-      app:linkUrl="https://material.io/design/components/text-fields.html"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+	<io.material.materialthemebuilder.widget.LabelLinkView
+		android:id="@+id/label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/text_field_label_title"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:linkUrl="https://material.io/design/components/text-fields.html" />
 
-    <com.google.android.material.textfield.TextInputLayout
-      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-      android:id="@+id/text_input_layout_outlined"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="@dimen/keyline_4"
-      app:layout_constraintTop_toBottomOf="@+id/label"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintEnd_toEndOf="parent">
+	<com.google.android.material.textfield.TextInputLayout
+		android:id="@+id/text_input_layout_filled"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/keyline_4"
+		android:hint="Hint in InputLayout"
+		app:helperText="This is a helper text"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/label">
 
-        <com.google.android.material.textfield.TextInputEditText
-          android:id="@+id/text_input_edit_text_outlined"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:hint="@string/text_field_hint_text" />
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/text_input_edit_text_filled"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+	</com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-      style="?textInputStyle"
-      android:id="@+id/text_input_layout_filled"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="@dimen/keyline_4"
-      app:layout_constraintTop_toBottomOf="@+id/text_input_layout_outlined"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintEnd_toEndOf="parent">
+	<com.google.android.material.textfield.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/keyline_4"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/label">
 
-        <com.google.android.material.textfield.TextInputEditText
-          android:id="@+id/text_input_edit_text_filled"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:hint="@string/text_field_hint_text" />
+		<com.google.android.material.textfield.TextInputEditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Hint in EditText" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+	</com.google.android.material.textfield.TextInputLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+	<com.google.android.material.textfield.TextInputLayout
+		android:id="@+id/text_input_layout_filled_error"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/keyline_4"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/label">
+
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/text_input_edit_text_filled_error"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+
+	</com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

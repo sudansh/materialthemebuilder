@@ -24,19 +24,19 @@ package io.material.materialthemebuilder.ui.component
  */
 enum class Component {
   BUTTON,
-  FAB,
-  CARD,
   TOP_APP_BAR,
-  CHIP,
-  DRAWER,
   TEXT_FIELD,
   BOTTOM_NAVIGATION,
   SWITCH,
   RADIO_BUTTON,
   CHECKBOX,
-  BOTTOM_APP_BAR,
   TABS,
   SNACKBAR,
   DIALOG,
-  BOTTOM_SHEET
+  DRAWER,
+  BOTTOM_SHEET,
+  BOTTOM_APP_BAR,
+  FAB,
+  CARD,
+  CHIP
 }

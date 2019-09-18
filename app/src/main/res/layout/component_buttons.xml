@@ -48,7 +48,7 @@
       app:layout_constraintTop_toBottomOf="@+id/label" />
 
     <com.google.android.material.button.MaterialButton
-      style="@style/Widget.MaterialComponents.Button.TextButton"
+      style="@style/AppMaterialButton.TextButton"
       android:id="@+id/button_text"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"

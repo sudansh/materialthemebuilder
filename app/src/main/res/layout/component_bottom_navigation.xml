@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 ~ Copyright (C) 2019 The Android Open Source Project
 ~
 ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,32 +15,33 @@
 -->
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  android:layout_width="match_parent"
-  android:layout_height="wrap_content"
-  android:clipToPadding="false"
-  android:paddingTop="@dimen/keyline_5"
-  android:paddingBottom="@dimen/keyline_5"
-  android:paddingStart="@dimen/keyline_4"
-  android:paddingEnd="@dimen/keyline_4">
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:clipToPadding="false"
+	android:paddingStart="@dimen/keyline_4"
+	android:paddingTop="@dimen/keyline_5"
+	android:paddingEnd="@dimen/keyline_4"
+	android:paddingBottom="@dimen/keyline_5">
 
-    <io.material.materialthemebuilder.widget.LabelLinkView
-      android:id="@+id/label"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/bottom_nav_label_title"
-      app:linkUrl="https://material.io/design/components/bottom-navigation.html"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+	<io.material.materialthemebuilder.widget.LabelLinkView
+		android:id="@+id/label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/bottom_nav_label_title"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:linkUrl="https://material.io/design/components/bottom-navigation.html" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-      android:id="@+id/bottom_navigation_view"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="@dimen/keyline_4"
-      app:menu="@menu/bottom_navigation_menu"
-      app:layout_constraintTop_toBottomOf="@+id/label"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintEnd_toEndOf="parent" />
+	<com.google.android.material.bottomnavigation.BottomNavigationView
+		android:id="@+id/bottom_navigation_view"
+		style="?bottomNavigationStyle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/keyline_4"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/label"
+		app:menu="@menu/bottom_navigation_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
